@@ -18,8 +18,9 @@ public:
     }
     
     int getProduct(int k) {
-        if(stream[n-k-1] == 0) return stream[n-1];
-        if(zero_idx >= n-k) retur 0;
+     if(zero_idx >= n-k) return 0;   
+     if(stream[n-k-1] == 0) return stream[n-1];
+        
        else return stream[n-k-1]/stream[n-k];
     }
 };
